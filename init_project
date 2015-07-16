@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+django-admin.py startproject $1 ./
+cat additional_settings >> $1/settings.py
+rm additional_settings
+rm init_project
